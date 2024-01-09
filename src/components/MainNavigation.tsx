@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export default function MainNavigation() {
   return (
@@ -7,10 +7,20 @@ export default function MainNavigation() {
         <nav>
           <ul className="list">
             <li>
-              <Link to="/">Home</Link>
+              <NavLink
+                to="/"
+                className={({ isActive }) => (isActive ? 'active' : '')}
+              >
+                Home
+              </NavLink>
             </li>
             <li>
-              <Link to="/products">Products</Link>
+              <NavLink
+                to="/products"
+                className={({ isActive }) => (isActive ? 'active' : '')}
+              >
+                Products
+              </NavLink>
             </li>
           </ul>
         </nav>

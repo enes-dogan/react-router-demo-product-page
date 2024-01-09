@@ -4,6 +4,7 @@ import HomePage from './pages/Home.tsx';
 import ProductsPage from './pages/Products.tsx';
 import RootLayout from './pages/Root.tsx';
 import ErrorPage from './pages/Error.tsx';
+import ProductDetailPage from './pages/ProductDetail.tsx';
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,7 @@ const router = createBrowserRouter([
         path: '/products',
         element: <ProductsPage />,
       },
+      { path: '/products/:id', element: <ProductDetailPage /> },
     ],
   },
 ]);

@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 export default function MainNavigation() {
   return (
     <>
-      <header>
+      <header className="header">
         <nav>
-          <ul>
+          <ul className="list">
             <li>
               <Link to="/">Home</Link>
             </li>

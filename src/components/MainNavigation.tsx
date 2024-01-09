@@ -10,6 +10,7 @@ export default function MainNavigation() {
               <NavLink
                 to="/"
                 className={({ isActive }) => (isActive ? 'active' : '')}
+                end
               >
                 Home
               </NavLink>
@@ -18,6 +19,7 @@ export default function MainNavigation() {
               <NavLink
                 to="/products"
                 className={({ isActive }) => (isActive ? 'active' : '')}
+                end
               >
                 Products
               </NavLink>
